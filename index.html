@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niranjan Dawadi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <main>
+    <!-- ***********************  ABOUT / PROFILE  *********************** -->
+    <header>
+      <div class="content-wrap">
+
+
+        <h1 class="example">Niranjan Dawadi</h1>
+        <h2 class="example">Software engineer / Problem Solver</h2>
+
+        <p>Learning has never been this fun!!</p>
+        <h2 class="example">Summary</h2>
+        <div id="summary">
+          <p>Aspiring full stack web/software developer.</p>
+        </div>
+        <ul>
+          <li>Proficient in Python (Django), HTML/CSS, Java </li>
+          <li>Experience with Git and other version controls </li>
+          <li>Knowledgeable in relational and non-relational databases (MySQL, PostgreSQL)</li>
+          <li>Familiar in working of MVC/MVT with restful api</li>
+          <li>Experience with data structures and algorithms</li>
+
+        </ul>
+      </div>
+
+
+    </header>
+
+    <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+    <section class="projects">
+      <div class="content-wrap">
+        <h2>Featured Projects</h2>
+
+        <!-- Copy the whole <section> block to add more projects. -->
+        <section>
+          <h3>Word Counter</h3>
+          <p>This project is made in python django which is used to count the total number of words present in the
+            sentence ot the paragraph. </p>
+          <!--<a id="wordCounter">Word Counter</a>-->
+          <div id="projects"></div>
+          <h3>Personal Portfolio Website</h3>
+          <p>This project is personal portfolio created by me using the frontend technologies.</p>
+
+          <h3>Report Generator using Django</h3>
+          <p>TWeb application that is used to generate the report of the desired location with the details included as
+            the user specifies.</p>
+
+          <h3>Virtual Self Driving Car</h3>
+          <p>Development of self-driving vehicle in a virtual environment that can navigate its way around without human
+            intervention using various neural networks.</p>
+        </section>
+        <!-- End of Project block. -->
+      </div>
+    </section>
+
+    <!-- ***********************  WORK EXPERIENCE  *********************** -->
+    <section class="work-experience">
+      <div class="content-wrap">
+        <h2>Work Experience</h2>
+
+
+        <!-- Copy this whole <section> block to add more jobs. -->
+        <section>
+          <h3>Internship</h3>
+          <p><strong>GrowByData Services</strong></p>
+          <p>February 2020 - May 2020</p>
+          <p>Worked as a intern and mainly involved in automating the daily stuffs and also did automation testing. Made
+            a strong base of Python and developing logics while working here.</p>
+          <p>Tasks done:</p>
+          <ul>
+            <li>Developed the automation for daily task using python selenium</li>
+            <li>Assisted in writing SQL queries for error handling.</li>
+            <li>Learned about the agile development methodologies and work flow using JIRA.</li>
+          </ul>
+        </section>
+        <!-- End of Job block. -->
+      </div>
+    </section>
+
+    <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+    <section class="education">
+      <div class="content-wrap">
+        <h2>Education</h2>
+
+        <!-- Copy this whole <section> block to add more schools. -->
+        <section>
+          <h3>Tribhuvan University - Kathmandu Engineering College</h3>
+          <p>Bachelor's Degree in Computer Engineering (2015-2019)</p>
+          <h3>Trinity International College</h3>
+          <p>HSEB (2014-2015)</p>
+        </section>
+        <!-- End of School block. -->
+      </div>
+    </section>
+
+    <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+    <footer>
+      <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
+
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul>
+          <li><a href="mailto:niranjan.dawadi54@gmail.com">Gmail</a></li>
+          <li><a href="https://www.linkedin.com/in/niranjan-dawadi-41b528113/" target="_blank">LinkedIn</a></li>
+          <li><a id="gitHubLink" target="_blank">Github</a> </li>
+          <li><a href="tel:+9779843548008">+9779843548008</a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    fetch("https://api.github.com/users/niranjandawadi")
+      .then(response => response.json())
+      .then(function (data) {
+
+        console.log(data)
+        //document.getElementById("fullName").textContent = data['name']
+        document.getElementById("gitHubLink").href = data['html_url']
+
+      })
+
+    /* fetch("https://api.github.com/users/niranjandawadi/repos")
+      .then(response => response.json())
+      .then(function (project) {
+
+        console.log(project)
+
+        document.getElementById("wordCounter").href = project['html_url']
+
+      }) */
+  </script>
+
+
+
+</body>
+
+</html>
