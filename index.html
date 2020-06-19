@@ -44,46 +44,56 @@
         <h2>Featured Projects</h2>
 
         <!-- Copy the whole <section> block to add more projects. -->
-        <section>
-          <h3>Word Counter</h3>
-          <p>This project is made in python django which is used to count the total number of words present in the
-            sentence or the paragraph. </p>
-          <!--<a id="wordCounter">Word Counter</a>-->
-          <div id="projects"></div>
-          <h3>Personal Portfolio Website</h3>
-          <p>This project is personal portfolio created by me using the frontend technologies.</p>
+          <section class="project-item">
+            <h3>Word Counter</h3>
+            <p>This project is made in python django which is used to count the total number of words present in the
+              sentence or  the paragraph. </p>
+          </section>
+          
+          <section class="project-item">
+            <h3>Personal Portfolio Website</h3>
+            <p>This project is personal portfolio created by me using the frontend technologies.</p>
+          </section>
 
-          <h3>Report Generator using Django</h3>
-          <p>TWeb application that is used to generate the report of the desired location with the details included as
-            the user specifies.</p>
+          <section class="project-item">
+            <h3>Report Generator using Django</h3>
+            <p>Web application that is used to generate the report of the desired location with the details included as
+              the user specifies.</p>
+          </section>
 
-          <h3>Virtual Self Driving Car</h3>
-          <p>Development of self-driving vehicle in a virtual environment that can navigate its way around without human
+          <section class="project-item">
+            <h3>Virtual Self Driving Car</h3>
+            <p>Development of self-driving vehicle in a virtual environment that can navigate its way around without human
             intervention using various neural networks.</p>
-        </section>
+          </section>
         <!-- End of Project block. -->
       </div>
     </section>
 
     <!-- ***********************  WORK EXPERIENCE  *********************** -->
-    <section class="work-experience">
-      <div class="content-wrap">
+    <section class="work-experience ">
+      <div class="content-wrap item-details">
         <h2>Work Experience</h2>
 
 
         <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
-          <h3>Internship</h3>
-          <p><strong>GrowByData Services</strong></p>
-          <p>February 2020 - May 2020</p>
-          <p>Worked as a intern and mainly involved in automating the daily stuffs and also did automation testing. Made
-            a strong base of Python and developing logics while working here.</p>
-          <p>Tasks done:</p>
-          <ul>
-            <li>Developed the automation for daily task using python selenium</li>
-            <li>Assisted in writing SQL queries for error handling.</li>
-            <li>Learned about the agile development methodologies and work flow using JIRA.</li>
-          </ul>
+        <section class="job-item">
+          <div class="job-detais">
+            <h3>Internship</h3>
+            <p><strong>GrowByData Services</strong></p>
+            <p>February 2020 - May 2020</p>
+          </div>
+          <div class="job-summary">
+            <p>Worked as a intern and mainly involved in automating the daily stuffs and also did automation testing. Made
+              a strong base of Python and developing logics while working here.</p>
+            <p>Tasks done:</p>
+            <ul>
+              <li>Developed the automation for daily task using python selenium</li>
+              <li>Assisted in writing SQL queries for error handling.</li>
+              <li>Learned about the agile development methodologies and work flow using JIRA.</li>
+            </ul>
+          </div>
+          
         </section>
         <!-- End of Job block. -->
       </div>
@@ -91,7 +101,7 @@
 
     <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
     <section class="education">
-      <div class="content-wrap">
+      <div class="content-wrap item-details">
         <h2>Education</h2>
 
         <!-- Copy this whole <section> block to add more schools. -->
@@ -111,7 +121,7 @@
         <h2>Let's Keep in Touch!</h2>
 
         <!-- Social media and contact links. Add or remove any networks. -->
-        <ul>
+        <ul class="contact-list">
           <li><a href="mailto:niranjan.dawadi54@gmail.com">Gmail</a></li>
           <li><a href="https://www.linkedin.com/in/niranjan-dawadi-41b528113/" target="_blank">LinkedIn</a></li>
           <li><a id="gitHubLink" target="_blank">Github</a> </li>
